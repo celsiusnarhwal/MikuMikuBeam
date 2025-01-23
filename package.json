@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently --ks SIGKILL -n \"Client,Server\" \"npm run dev:client\" \"npm run dev:server\"",
     "dev:server": "tsx watch server/",
-    "dev:client": "vite",
+    "dev:client": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
