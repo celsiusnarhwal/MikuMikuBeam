@@ -1,4 +1,4 @@
-FROM node:latest
+FROM oven/bun
 
 RUN mkdir /app/
 
@@ -6,6 +6,6 @@ WORKDIR /app/
 
 COPY . /app/
 
-RUN npm install
+RUN bun install
 
-CMD ["npm", "run", "dev"]
+CMD ["bun", "run", "dev"]
